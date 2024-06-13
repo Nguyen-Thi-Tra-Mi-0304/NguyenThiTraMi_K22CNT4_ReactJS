@@ -2,6 +2,7 @@ import './App.css';
 import {React, useEffect, useState} from 'react'
 import axios from 'axios';
 import NttmStudentList from './components/NttmStudentList';
+import NttmStudentCreate from './components/NttmStudentCreate';
 
 
 function NttmApp() {
@@ -26,6 +27,7 @@ function NttmApp() {
       <h2 className='text-center my-3'>Xử lý chức năng CRUD - Hook - API</h2>
       <hr/>
       <NttmStudentList renderNttmStudentList = {nttmStudentList} />
+      <NttmStudentCreate setNttmStudentList = {setNttmStudentList} />
     </div>
   );
 }
